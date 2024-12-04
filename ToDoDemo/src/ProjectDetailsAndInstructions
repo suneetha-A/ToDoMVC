@@ -1,0 +1,146 @@
+User Story: As a user, I should be able to manage my todos effectively.
+
+Acceptance Criteria (AC):
+
+Pre_Req:
+
+1. Open the ToDo App page
+
+
+To check the "What needs to be done" Text box
+
+AC 1:(Test 1)Check the ToDo text box with empty input
+1. Click Enter in Text box
+2. The ToDO list should be empty
+
+AC 2: (Test 2)Add a Todo
+1. Type a task description into the "What needs to be done?" input field and press "Enter"
+2. Then check the size of the Todo list
+3. And The input field should be cleared after adding the task
+4. Verify that the new todo appears in the list
+
+Delete button 
+
+AC 3: Delete Added Task
+
+1. Add two Items todos list
+2. Click the "X" button of first task in list
+3. Check the todo list
+4. Check the todo-count message
+
+Check All, Active, Completed and Clear completed Filter Buttons
+
+AC 4: Verify Completed Link 
+
+1. Add two or more items to todo list
+2. Click the Checkbox beside of Task(to make task completed)
+3. Check the Todo list weather or not item selected
+4. Click Completed Link on below of todos list
+5. Check the Todo list weather or not item selected
+6. Check the todo-count message
+
+AC 5: Verify Active Link
+
+1. Add two or more items to todo list
+2. Click the Checkbox beside of Task(to make task completed)
+3. Collect all active todo list : todoActiveElementsofMainList
+3. Click the Active link
+4. Check the todo-count message
+5. Collect all active todo list : todoActiveElementsofActiveLink
+6. Compart both lists
+
+Verify Clear completed
+
+AC 6: Verify Main page after clicking Clear completed button
+
+1. Add two items to todo list
+2. Click the Checkbox beside of Task(to make task completed)
+3. Click Clear completed button
+4. Check the todo list (check for unchecked boxes)
+
+
+AC 7: verify Completed page after clear completed
+
+1. Add two or more items to todo list
+2. Click the Checkbox beside of Task(to make task completed)
+3. Click Clear completed button
+4. Check the todo list when Click Completed link button
+
+AC 8: VerifySelectAllButton
+
+1. Add two or more items to todo list
+2. Press downArrow button in text field
+3. Check the todo-count message
+
+AC 9: verifySelectDownArrowButtonTwotimes
+
+1. Add two or more items to todo list
+2. Press downArrow button two times
+3. Check the todo-count message
+
+
+
+AC 10: Verify All link
+
+1. Add two or more items to todo list
+2. Collect list elements
+2. Click the Checkbox beside of Task(to make task completed)
+3. Click Completed button
+4. Click All link
+5. Collect list again
+6. Compare both lists
+
+
+
+AC 11: Double click on given input Text box and Edit
+
+1. Enter "Test" in textbox
+2. Double click on given input
+3. Edit input as "testTask"
+4. Check Todo list
+
+AC 12: Compare the input with listItem (after add Task)
+
+1. Enter the input as "VerifyTask" into ToDo
+2. Extract the task from list
+3. Compare both
+
+AC 13: Persist Todos:
+
+1. I have added todos to my list,
+2. When I refresh the page 
+3. Then my todos should persist
+
+AC14: Edit an Existing Todo:
+
+1. I have a todo in the list,
+2. Double-click on a todo item or click an "Edit" button,
+3. Todo text should become editable, and I should be able to modify the text and save the changes by pressing "Enter" or clicking an "Save" button.
+
+
+Conclusion: Among 14 test cases, 13 test cases passed and one Test case failed: Persist Todos (AC 13)
+
+
+How to Run Tests:
+
+-> Run the test file as TestNG (Execute the test suite using TestNG, which can be run directly from an IDE)
+
+
+
+Implementation Strategy:
+
+To automate the test cases for given user story, used Selenium WebDriver with Java as the Programming language, TestNG as a testing Framework and Listeners to generate Test report
+
+1. Used Selenium WebDriver to simulate the user actions in Chrome 
+
+2. Used PageObjectModel(POM) design pattern to create the structure object repository 
+
+3. User Java Programming language to develop the logic that perform user actions on UI
+
+4. Used Assertions to verify the results of each Test case
+
+5. Use the built-in TestNG reporting feature to generate HTML or XML reports after test run
+
+6. Implemented code in Eclipse editor and used Maven dependencies 
+
+

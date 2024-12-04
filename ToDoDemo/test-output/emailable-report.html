@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,359</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ToDoAssessment.TodoTestCases</td><td><a href="#m0">persistToDos</a></td><td rowspan="1">1733292472473</td><td rowspan="1">418</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">ToDoAssessment.TodoTestCases</td><td><a href="#m1">VerifyDestroyButton</a></td><td rowspan="1">1733292466316</td><td rowspan="1">599</td></tr><tr class="passedeven"><td><a href="#m2">addTodo</a></td><td rowspan="1">1733292468056</td><td rowspan="1">377</td></tr><tr class="passedeven"><td><a href="#m3">editExistingTodo</a></td><td rowspan="1">1733292469536</td><td rowspan="1">639</td></tr><tr class="passedeven"><td><a href="#m4">emptyTodo</a></td><td rowspan="1">1733292471319</td><td rowspan="1">50</td></tr><tr class="passedeven"><td><a href="#m5">verifyActive</a></td><td rowspan="1">1733292474037</td><td rowspan="1">578</td></tr><tr class="passedeven"><td><a href="#m6">verifyAll</a></td><td rowspan="1">1733292475727</td><td rowspan="1">481</td></tr><tr class="passedeven"><td><a href="#m7">verifyCompleted</a></td><td rowspan="1">1733292477343</td><td rowspan="1">516</td></tr><tr class="passedeven"><td><a href="#m8">verifyCompletedPageAfterClearCompleted</a></td><td rowspan="1">1733292478964</td><td rowspan="1">540</td></tr><tr class="passedeven"><td><a href="#m9">verifyEditInput</a></td><td rowspan="1">1733292480611</td><td rowspan="1">220</td></tr><tr class="passedeven"><td><a href="#m10">verifyEnteredTaskwithList</a></td><td rowspan="1">1733292481949</td><td rowspan="1">233</td></tr><tr class="passedeven"><td><a href="#m11">verifyMainPageAfterClearCompleted</a></td><td rowspan="1">1733292483336</td><td rowspan="1">468</td></tr><tr class="passedeven"><td><a href="#m12">verifySelectDownArrowButton</a></td><td rowspan="1">1733292484931</td><td rowspan="1">437</td></tr><tr class="passedeven"><td><a href="#m13">verifySelectDownArrowButtonTwotimes</a></td><td rowspan="1">1733292486497</td><td rowspan="1">462</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">ToDoAssessment.TodoTestCases#persistToDos</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Todos list not persisted after refresh expected [0] but found [2]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at ToDoAssessment.TodoTestCases.persistToDos(TodoTestCases.java:268)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ToDoAssessment.TodoTestCases#VerifyDestroyButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ToDoAssessment.TodoTestCases#addTodo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ToDoAssessment.TodoTestCases#editExistingTodo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ToDoAssessment.TodoTestCases#emptyTodo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ToDoAssessment.TodoTestCases#verifyActive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ToDoAssessment.TodoTestCases#verifyAll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">ToDoAssessment.TodoTestCases#verifyCompleted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ToDoAssessment.TodoTestCases#verifyCompletedPageAfterClearCompleted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ToDoAssessment.TodoTestCases#verifyEditInput</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">ToDoAssessment.TodoTestCases#verifyEnteredTaskwithList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">ToDoAssessment.TodoTestCases#verifyMainPageAfterClearCompleted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">ToDoAssessment.TodoTestCases#verifySelectDownArrowButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">ToDoAssessment.TodoTestCases#verifySelectDownArrowButtonTwotimes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
